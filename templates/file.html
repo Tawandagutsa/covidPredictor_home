@@ -2,7 +2,7 @@
     <head>
         <style>
             input[type=button] {
-                background-color: #4CAF50;
+                background-color: #778b91;
                 border: black;
                 border-radius: 15px;
                 color: hsl(0, 0%, 100%);
@@ -13,23 +13,77 @@
                 width: 200px;
                 height: 100px;
               }
+              div {
+                background-color: lightblue;
+                border-radius: 15px;
+             }
+             h1{
+                 color: blue;
+             }
+            
+              div.a {
+                text-align: center;
+                width: 800px;
+              }
 
               .text-center {
                 text-align: center;
 
               }
-              @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
-
+              @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+              
             </style>
     </head>
-    <body style="background-image: url('https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
-        <h1 class ="text-center" style="size: 100px; margin-top:170px; font-family: 'Jomhuria', cursive;">COVID-19 PREDICTOR</h1>
-        <div class="text-center">
-            <input type ="button" style = "margin-top: 50px; font-family: 'Jomhuria', cursive;" value= " Data analysis" onclick="window.open('https://dashboard-90.herokuapp.com/')"/>
-            <input type ="button" style = "font-family: 'Jomhuria', cursive;" value= "Predictor" onclick="window.open('https://share.streamlit.io/munyaoverflow/ai-project-app/main/ai.py')"/>
+    <body style="background-color: #f5f0f0;">
+
+        
+        
+
+        <div>
+            <h1 class ="text-center" style="size: 100px; padding-top:10px; font-family: 'Roboto', sans-serif;">COVID-19 PREDICTOR</h1>
+        </div>
+
+        <div style="width: 40%; float: right; height: 300px; margin-top: 0px; margin-right: 50px;" id="1">
+            <h1 class ="text-center" style="font-family: 'Roboto', sans-serif;">How it spreads</h1>
+            <p style="font-family: 'Roboto'">The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.
+                You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.rther research is ongoing to better understand the spread of the virus and which settings are most risky and why. Research is also under way to study virus variants that are emerging and why some are more transmissible.</p>
+        </div>
+
+       
+
+
+        <div style=" width: 40%; height: 300px; margin-left: 50px;" id="1">
+            <h1 class ="text-center" style="size: 100px; padding-top:10px; font-family: 'Roboto', sans-serif;">What is covid-19?</h1>
+            <p style="font-family: 'Roboto', sans-serif;">Coronavirus disease 2019 (COVID-19) is defined as illness caused by a novel coronavirus now called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2; formerly called 2019-nCoV), which was first identified amid an outbreak of respiratory illness cases in Wuhan City, Hubei Province, China. [1] It was initially reported to the WHO on December 31, 2019. On January 30, 2020, the WHO declared the COVID-19 outbreak a global health emergency. [2, 3] On March 11, 2020, the WHO declared COVID-19 a global pandemic, its first such designation since declaring H1N1 influenza a pandemic in 2009</p>
+        </div>
+
+        <div>
 
         </div>
+
+        <div style=" width: 47%; height: 550px;" id="1">
+            <h1 class ="text-center" style="size: 200px; margin-top:100px; font-family: 'Roboto', sans-serif;">Impact of covid-19</h1>
+            <p style="font-family: 'Roboto', sans-serif;">13 October 2020 Statement Reading time: 3 min (864 words)
+                The COVID-19 pandemic has led to a dramatic loss of human life worldwide and presents an unprecedented challenge to public health, food systems and the world of work. The economic and social disruption caused by the pandemic is devastating: tens of millions of people are at risk of falling into extreme poverty, while the number of undernourished people, currently estimated at nearly 690 million, could increase by up to 132 million by the end of the year.
+                Millions of enterprises face an existential threat. Nearly half of the world’s 3.3 billion global workforce are at risk of losing their livelihoods. Informal economy workers are particularly vulnerable because the majority lack social protection and access to quality health care and have lost access to productive assets. Without the means to earn an income during lockdowns, many are unable to feed themselves and their families. For most, no income means no food, or, at best, less food and less nutritious food. 
+                The pandemic has been affecting the entire food system and has laid bare its fragility. Border closures, trade restrictions and confinement measures have been preventing farmers from accessing markets, including for buying inputs and selling their produce, and agricultural workers from harvesting crops, thus disrupting domestic and international food supply chains and reducing access to healthy, safe and diverse diets. The pandemic has decimated jobs and placed millions of livelihoods at risk. As breadwinners lose jobs, fall ill and die, the food security and nutrition of millions of women and men are under threat, with those in low-income countries, particularly the most marginalized populations, which include small-scale farmers and indigenous peoples, being hardest hit.
+                Millions of agricultural workers – waged and self-employed – while feeding the world, regularly face high levels of working poverty, malnutrition and poor health, and suffer from a lack of safety and labour protection as well as other types of abuse. With low and irregular incomes and a lack of social support, many of them are spurred to continue working, often in unsafe conditions, thus exposing themselves and their families to additional risks. </p>
+        </div>
+
+        <div style="width: 47%; float: right; height: 550px; margin-top: -550px;" id="1">
+            <h1 class ="text-center" style="font-family: 'Roboto', sans-serif;">Why prediction is useful</h1>
+            <p style="font-family: 'Roboto'">Effective screening of SARS-CoV-2 enables quick and efficient diagnosis of COVID-19 and can mitigate the burden on healthcare systems. We have developed a Prediction model that makes use of polynomial regression to estimate the risk of infection. This aims to assist medical staff worldwide in triaging patients, especially in the context of limited healthcare resources. We established a machine-learning approach that trained on records from 71,831 tested individuals (of whom 4769 were confirmed to have COVID-19). The test set contained data from the subsequent week (47,401 tested individuals of whom 3624 were confirmed to have COVID-19). Our model predicts COVID-19 test results with high accuracy using only eight binary features: sex, age , known contact with an infected individual, and the appearance of five initial clinical symptoms. Overall, based on the nationwide data publicly reported by the Israeli Ministry of Health, we developed a model that detects COVID-19 cases by simple features accessed by asking basic questions. Our framework can be used, among other considerations, to prioritize testing for COVID-19 when testing resources are limited.Prediction for the number of cases in a pandemic and implications for health care needs and resources have received a lot of attention in the scientific world , government agencies , and in media lately. With the plethora of models, there is also growing scrutiny about the accuracy of different models, and an appreciation that model parameters need to be refined based on evolving knowledge about the disease trajectory and factors impacting infection and transmission rates.</p>
+        </div>
+        
+
+        <div class="text-center" style="margin-top: 50px; margin-left: 30px; margin-bottom: 50px; background-color:#f5f0f0;">
+            <input type ="button" style = "margin-top: 30px; font-family: 'Roboto', sans-serif; font-size:20px" value= " DATA ANALYSIS" onclick="window.open('https://dashboard-90.herokuapp.com/')"/>
+            <input type ="button" style = "font-family: 'Roboto', sans-serif; font-size:20px" value= "PREDICTOR" onclick="window.open('https://share.streamlit.io/munyaoverflow/ai-project-app/main/ai.py')"/>
+        </div>
+        
+
     </body>
+   
       
 
 </html>
